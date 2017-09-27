@@ -1,0 +1,13 @@
+{
+	"all": {
+		"indent_size": 2
+	},
+	"js": {
+		"e4x": true,
+		"end_with_newline": true,
+		"indent_size": 2
+	},
+	"all": {
+    "end_with_newline": true
+  }
+}

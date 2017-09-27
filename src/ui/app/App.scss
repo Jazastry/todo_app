@@ -1,0 +1,12 @@
+.main {
+    width: 100%;
+    height: 99vh;
+}
+
+.upper_cont {
+    height: 10.5em;
+}
+
+.lower_cont {
+	height: calc(98% - 10.5em);
+}

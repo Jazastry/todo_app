@@ -1,0 +1,49 @@
+@import '../../node_modules/font-awesome/css/font-awesome.min.css';
+
+html,
+body,
+div,
+form {
+    padding: 0px;
+    margin: 0px;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+body {
+    background-color: #322238;
+    color: #9B9B9B;
+    font-size: 14px;
+}
+
+input {
+    background-color: #1d1e44;
+    outline: none;
+    border: 1px solid #6F6969;
+    color: #28ec36;
+    padding: 0.4em;
+}
+
+input:focus {
+    background-color: #1d1e44;
+    outline: none;
+    border: 1px solid #8A36C4;
+    padding: 0.4em;
+}
+
+button {
+    border: 1px solid #6F6969;
+    background-color: #433434;
+    color: #B6ADAD;
+    outline: none;
+    padding: 0.5em 1em;
+}
+
+button:hover {
+    background-color: #5C5252;
+    color: #CEC3C3;
+}

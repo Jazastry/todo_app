@@ -1,0 +1,40 @@
+.main {
+    height: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+}
+
+.todo {
+    width: 100%;
+    height: 3em;
+    position: relative;
+    span {
+        height: 2em;
+        line-height: 2em;
+        margin-top: 1.5em;
+        display: inline-block;
+    }
+    span:nth-child(1) {
+        padding-left: 1em;
+        border-right: 1px solid #25A72F;
+        width: 20%;
+        color: #D9CDCD;
+    }
+    span:nth-child(2) {
+        padding-left: 1em;
+        width: 59%;
+        color: #D9CDCD;
+    }
+    span:last-child {
+        width: 10%;
+        border-right: none;
+        position: absolute;
+        right: 0px;
+        z-index: 1;
+    }
+    span:last-child:hover {
+        color: #E6DFDF
+    }
+}

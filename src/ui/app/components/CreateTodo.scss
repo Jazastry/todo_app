@@ -1,0 +1,39 @@
+.cont {
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+.main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #25A72F;
+}
+
+.line_cont {
+    @extend .cont;
+    * {
+        display: inline-block;
+    }
+    label {
+        width: 23%;
+    }
+    input {
+        width: 72%;
+    }
+}
+
+.label_cont {
+	@extend .cont;
+	font-size: 1.5em;
+}
+
+.btn_cont {
+    @extend .cont;
+    height: 3em;
+    position: relative;
+    button {
+    	position: absolute;
+    	right: 5%;
+    }
+}
