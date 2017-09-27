@@ -1,0 +1,24 @@
+{
+  "name": "toto_app",
+  "version": "1.0.0",
+  "description": "An real time todo nodee-js application",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jazastry/todo_app.git"
+  },
+  "keywords": [
+    "todo",
+    "node",
+    "reltime"
+  ],
+  "author": "Jazastry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jazastry/todo_app/issues"
+  },
+  "homepage": "https://github.com/Jazastry/todo_app#readme"
+}
