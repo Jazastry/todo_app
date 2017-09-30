@@ -1,12 +1,11 @@
-// express initialization
 let express = require('express'),
   path = require('path'),
   http = require('http'),
   paths = require(path.resolve(process.cwd(), './config/paths.js')),
-  serverPort = 8888,
   db = require('./db.js'),
   app = express(),
-  server = http.createServer(app);
+  server = http.createServer(app),
+  serverPort = 8888;
 
 app.use(express.static(path.resolve(process.cwd(), paths.build)))
 
@@ -14,14 +13,9 @@ server.listen(serverPort, function() {
   console.log('listening on port ', serverPort)
 });
 
-
-// Initialize socket.io
-let io = require('socket.io').listen(server),
-  connections = 0;
+let io = require('socket.io').listen(server);
 
 io.on('connection', function(client) {
-  connections++;
-  console.log('Client connected connections - ', connections)
   db.getAllTodos().then((todos) => {
     io.emit('todos.create', todos);
   })
@@ -36,9 +30,5 @@ io.on('connection', function(client) {
         .then((todo) => {
             io.emit('todo.delete', id)
         })
-  })
-  client.on('disconnect', function() {
-    connections--;
-    console.log('Client disconected connections - ', connections)
   })
 })

@@ -24,8 +24,9 @@
 }
 
 .label_cont {
-	@extend .cont;
+	width: 100%;
 	font-size: 1.5em;
+    padding-top: 0.5em;
 }
 
 .btn_cont {

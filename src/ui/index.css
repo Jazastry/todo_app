@@ -8,13 +8,15 @@ form {
     margin: 0px;
 }
 
-html,
-body {
-    height: 100%;
-    overflow-y: hidden;
+html {
+    background-color: #000;
 }
 
 body {
+    max-width: 700px;
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #322238;
     color: #9B9B9B;
     font-size: 14px;
@@ -30,8 +32,8 @@ input {
 
 input:focus {
     background-color: #1d1e44;
-    outline: none;
     border: 1px solid #8A36C4;
+    outline: none;
     padding: 0.4em;
 }
 
@@ -46,4 +48,8 @@ button {
 button:hover {
     background-color: #5C5252;
     color: #CEC3C3;
+}
+
+button:focus {
+    border: 1px solid #8A36C4;
 }

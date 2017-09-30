@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-// const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
 const paths = require('./paths.js');
 
 module.exports = {
@@ -14,11 +13,9 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'Irfan',
-      // inlineSource: '.(js|css)$',
       template: path.resolve(paths.root, paths.entryHtml),
       favicon: path.resolve(paths.root, paths.favicon)
     }),
-    // new HtmlWebpackInlineSourcePlugin()
   ],
   output: {
     filename: 'bundle.js',
@@ -48,7 +45,6 @@ module.exports = {
           loader: 'css-loader',
           options: {
             localIdentName: '[sha512:hash:base32]-[name]-[local]',
-            // modules: true,
             sourceMap: true
           }
         }]
